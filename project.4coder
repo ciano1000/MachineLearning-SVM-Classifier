@@ -1,0 +1,55 @@
+version(1);
+
+project_name = "Assignment2";
+
+patterns = {
+	"*.cpp",
+	"*.c",
+	"*.odin",
+	"*.hpp",
+	"*.h",
+	"*.bat",
+	"*.4coder",
+	"*.inc"
+};
+
+blacklist_patterns = {
+".*",
+};
+
+load_paths_win = {
+	{"."}
+};
+
+load_paths = {
+	{	{
+		{load_paths_win, .relative = true, .recursive = true, }
+	}, .os = "win"},
+};
+
+command_list = {
+	{
+		.name = "build",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {{".\\code\\build.bat", .os = "win"},},
+	},
+	{
+		.name = "run",
+		.out = "*compilation*",
+		.cursor_at_end = true,
+		.cmd = {{".\\code\\run.bat", .os = "win"},},
+	},
+	{
+		.name = "debug",
+		.out = "*compilation*",
+		.cursor_at_end = true,
+		.cmd = {{".\\code\\debug.bat", .os = "win"},},
+	}
+};
+
+fkey_command[1] = "build";
+fkey_command[2] = "run";
+fkey_command[3] = "debug";
