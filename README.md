@@ -1,1 +1,2 @@
 # MachineLearning-SVM-Classifier
+Simple SVM classifier written in C for a University Machine Learning Module, utilises Dear IMGUI for ui elements, everything else written from scratch full information available in linked report [here](https://docs.google.com/document/d/1PPdMTS2wHv5Vc4HgvMvmotPUeoWXrImI/edit?usp=sharing&ouid=112787624128720151756&rtpof=true&sd=true).![5IterationsTest](https://user-images.githubusercontent.com/5720215/132558153-e54e6b18-536d-40e4-994f-b98fb0588465.png)
